@@ -24,13 +24,9 @@ public class Producto {
 	private String descripcion;
 	
 	@Size(min = 3, max = 150, message = "Valor debe tener minimo 3 caracteres")
-	@Column(name = "valor", nullable = false, length = 150)
-	private int valor;
-	
-	@Size(min = 3, message = "Producto debe tener minimo 3 caracteres")
-	@Column(name = "producto", nullable = false, length = 20)
-	private String producto;
-		
+	@Column(name = "valor_producto", nullable = false, length = 8)
+	private int valor_producto;
+			
 	@ManyToOne
 	@JoinColumn(name = "id_marca", nullable = false, foreignKey = @ForeignKey(name = "FK_producto_marca"))
 	private Marca marca;
