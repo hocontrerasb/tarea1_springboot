@@ -16,9 +16,9 @@ public class Cliente {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id_Cliente;
 	
-	@Size(min = 5, message = "Nombre debe tener minimo 5 caracteres")
-	@Column(name = "nombre", nullable = false, length = 20)
-	private String nombre;
+	@Size(min = 5, message = "Nombre Cliente debe tener minimo 5 caracteres")
+	@Column(name = "nombre_cliente", nullable = false, length = 20)
+	private String nombre_cliente;
 	
 	@Size(min = 3, max = 150, message = "Direccion debe tener minimo 3 caracteres")
 	@Column(name = "direccion", nullable = false, length = 150)
