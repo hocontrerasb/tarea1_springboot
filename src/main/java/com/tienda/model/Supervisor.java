@@ -14,7 +14,7 @@ public class Supervisor {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id_Supervisor;
+	private Integer idSupervisor;
 	
 	@Size(min = 5, message = "Nombre debe tener minimo 5 caracteres")
 	@Column(name = "nombre_supervisor", nullable = false, length = 20)
@@ -28,5 +28,38 @@ public class Supervisor {
 	@Column(name = "telefono_supervisor", nullable = false, length = 9)
 	private String telefono_supervisor;
 
+	public Integer getIdSupervisor() {
+		return idSupervisor;
+	}
 
+	public void setIdSupervisor(Integer idSupervisor) {
+		this.idSupervisor = idSupervisor;
+	}
+
+	public String getNombre_supervisor() {
+		return nombre_supervisor;
+	}
+
+	public void setNombre_supervisor(String nombre_supervisor) {
+		this.nombre_supervisor = nombre_supervisor;
+	}
+
+	public String getDireccion_supervisor() {
+		return direccion_supervisor;
+	}
+
+	public void setDireccion_supervisor(String direccion_supervisor) {
+		this.direccion_supervisor = direccion_supervisor;
+	}
+
+	public String getTelefono_supervisor() {
+		return telefono_supervisor;
+	}
+
+	public void setTelefono_supervisor(String telefono_supervisor) {
+		this.telefono_supervisor = telefono_supervisor;
+	}
+
+	
+	
 }

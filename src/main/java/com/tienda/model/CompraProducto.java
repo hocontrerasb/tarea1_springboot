@@ -11,7 +11,6 @@ import javax.persistence.Table;
 
 public class CompraProducto {
 	
-	
 	@Id
 	private Producto producto;
 	

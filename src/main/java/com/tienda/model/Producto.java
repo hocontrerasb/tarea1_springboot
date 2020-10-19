@@ -31,5 +31,38 @@ public class Producto {
 	@JoinColumn(name = "id_marca", nullable = false, foreignKey = @ForeignKey(name = "FK_producto_marca"))
 	private Marca marca;
 
+	public Integer getId_Producto() {
+		return id_Producto;
+	}
 
+	public void setId_Producto(Integer id_Producto) {
+		this.id_Producto = id_Producto;
+	}
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+	public int getValor_producto() {
+		return valor_producto;
+	}
+
+	public void setValor_producto(int valor_producto) {
+		this.valor_producto = valor_producto;
+	}
+
+	public Marca getMarca() {
+		return marca;
+	}
+
+	public void setMarca(Marca marca) {
+		this.marca = marca;
+	}
+
+
+	
 }

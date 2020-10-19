@@ -1,3 +1,4 @@
+
 package com.tienda.model;
 
 import javax.persistence.Column;
@@ -28,6 +29,38 @@ public class Marca {
 	@Size(min = 3, message = "Ciudad debe tener minimo 3 caracteres")
 	@Column(name = "ciudad", nullable = false, length = 20)
 	private String ciudad;
+
+	public Integer getId_Marca() {
+		return id_Marca;
+	}
+
+	public void setId_Marca(Integer id_Marca) {
+		this.id_Marca = id_Marca;
+	}
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+	public String getCiudad() {
+		return ciudad;
+	}
+
+	public void setCiudad(String ciudad) {
+		this.ciudad = ciudad;
+	}
 		
 
 }
